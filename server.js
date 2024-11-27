@@ -4,7 +4,6 @@ const fs = require('fs');
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
-const { execSync } = require('child_process');
 
 const app = express();
 const port = process.env.PORT || 3000;
