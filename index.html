@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generisanje PDF-a sa izmenama</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f9;
+      padding: 50px;
+    }
+    h1 {
+      color: #333;
+    }
+    .button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      border-radius: 5px;
+    }
+    .button:hover {
+      background-color: #45a049;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      margin: 10px;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Unesite tekst za zamenu reči "UNA"</h1>
+  <form action="/replace-text" method="POST">
+    <input type="text" name="replaceText" placeholder="Unesite novi tekst" required>
+    <br>
+    <button type="submit" class="button">Zameni tekst i generiši PDF</button>
+  </form>
+
+  <p id="pdf-link"></p>
+</body>
+</html>
