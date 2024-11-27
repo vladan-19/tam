@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "postinstall": "chmod +x /opt/render/project/src/.cache/puppeteer/chrome/linux-131.0.6778.85/chrome-linux64/chrome && apt-get update && apt-get install -y libnss3 libatk-bridge2.0-0 libatk1.0-0 libcups2 libxss1 libgdk-pixbuf2.0-0 libnspr4 libgbm1"
+    "postinstall": "chmod +x /opt/render/project/src/.cache/puppeteer/chrome/linux-131.0.6778.85/chrome-linux64/chrome"
   },
   "keywords": [],
   "author": "",
@@ -21,3 +21,4 @@
   },
   "description": ""
 }
+
