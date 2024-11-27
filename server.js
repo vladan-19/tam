@@ -62,9 +62,10 @@ app.post('/replace-text', async (req, res) => {
 
 async function convertHtmlToPdf(htmlFilePath) {
   try {
-    // Pokreni Puppeteer sa potrebnim argumentima
+    // Pokreni Puppeteer sa potrebnim argumentima i putanjom do Chromium-a
     const browser = await puppeteer.launch({
       headless: true,
+      executablePath: path.resolve(__dirname, '.cache/puppeteer/chrome/linux-131.0.6778.85/chrome-linux64/chrome'),
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
