@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "export PUPPETEER_SKIP_DOWNLOAD=true && node server.js",
-    "postinstall": "echo 'Setting permissions for Chromium...' && chmod +x /opt/render/project/src/.cache/puppeteer/chrome/linux-131.0.6778.85/chrome-linux64/chrome && echo 'Permissions set!'"
+    "postinstall": "chmod -R +x /opt/render/project/src/.cache/puppeteer/chrome/linux-131.0.6778.85/chrome-linux64/* && echo 'Permissions set!'"
   },
   "keywords": [],
   "author": "",
